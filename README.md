@@ -65,7 +65,7 @@ Reusable procedures for:
 - Admin removing unwanted listings
 
 ---
-
+### Project Structure
 project/
 │
 ├── .vscode/ 
@@ -88,6 +88,7 @@ project/
 ├── tempCodeRunnerFile.js 
 │
 └── README.md 
+
 
 
 
