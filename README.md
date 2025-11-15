@@ -65,29 +65,23 @@ Reusable procedures for:
 - Admin removing unwanted listings
 
 ---
-### Project Structure
+## 📁 Project Structure
+
 project/
-│
 ├── .vscode/ 
-│
 ├── frontend/ 
-│ ├── index.html
-│ ├── style.css
-│ └── app.js
+│ ├── index.html 
+│ ├── style.css 
+│ └── app.js 
 │
 ├── node_modules/ 
-│
 ├── .env 
-│
 ├── package.json 
-│
-├── package-lock.json 
-│
+├── package-lock.json
 ├── server.js 
-│
 ├── tempCodeRunnerFile.js 
-│
 └── README.md 
+
 
 
 
