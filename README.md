@@ -64,23 +64,7 @@ Reusable procedures for:
 - Updating product details  
 - Admin removing unwanted listings
 
----
-## 📁 Project Structure
 
-project/
-├── .vscode/ 
-├── frontend/ 
-│ ├── index.html 
-│ ├── style.css 
-│ └── app.js 
-│
-├── node_modules/ 
-├── .env 
-├── package.json 
-├── package-lock.json
-├── server.js 
-├── tempCodeRunnerFile.js 
-└── README.md 
 
 
 
