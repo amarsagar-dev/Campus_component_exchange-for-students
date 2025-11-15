@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Campus Exchange</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- AUTH -->
+    <div id="authSection" class="auth-container">
+      <h1 class="app-title">🏫 Campus Exchange</h1>
+      <h2 id="authTitle">Login</h2>
+      <form id="authForm" class="glass-card">
+        <input id="fullname" type="text" placeholder="Full name" class="hidden" />
+        <input id="email" type="email" placeholder="Email" required />
+        <input id="password" type="password" placeholder="Password" required />
+        <button id="authBtn" class="btn-primary" type="submit">Login</button>
+      </form>
+      <p id="toggleAuth" class="toggle-text">Don’t have an account? <span>Sign Up</span></p>
+    </div>
+
+    <!-- MARKETPLACE -->
+    <div id="marketplaceSection" class="hidden marketplace-container">
+      <header>
+        <h2>Welcome, <span id="userName"></span></h2>
+        <div class="header-buttons">
+          <button id="dashboardBtn" class="btn-secondary">📊 Dashboard</button>
+          <button id="logoutBtn" class="btn-secondary">Logout</button>
+        </div>
+      </header>
+
+      <nav>
+        <button id="viewProductsBtn" class="nav-btn active">View Listings</button>
+        <button id="addProductBtn" class="nav-btn">Sell Item</button>
+      </nav>
+
+      <div id="productContainer" class="product-grid"></div>
+
+      <form id="addProductForm" class="hidden glass-card add-form">
+        <h3>Post New Item</h3>
+        <input id="title" type="text" placeholder="Title" required />
+        <textarea id="description" placeholder="Description"></textarea>
+        <input id="price" type="number" placeholder="Price" required />
+        <select id="itemCondition">
+          <option>New</option><option>Like New</option><option>Good</option><option>Fair</option><option>For Parts</option>
+        </select>
+        <button type="submit" class="btn-primary">Add Listing</button>
+      </form>
+    </div>
+ 
+    <!-- DASHBOARD -->
+    <div id="dashboardSection" class="hidden glass-card dashboard">
+      <h2>📊 Seller Dashboard</h2>
+      <p>Your received feedback:</p>
+      <div id="feedbackList"></div>
+      <button id="closeDashboardBtn" class="btn-secondary">Back</button>
+    </div>
+
+    <!-- FEEDBACK MODAL -->
+    <div id="feedbackModal" class="feedback-modal">
+      <div class="modal-content">
+        <h3>⭐ Give Feedback</h3>
+        <p id="feedbackProduct"></p>
+        <input id="feedbackRating" type="number" min="1" max="5" placeholder="Rating (1-5)" />
+        <textarea id="feedbackComments" placeholder="Comments"></textarea>
+        <div class="modal-buttons">
+          <button id="submitFeedbackBtn" class="btn-primary">Submit</button>
+          <button id="cancelFeedbackBtn" class="btn-secondary">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
