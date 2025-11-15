@@ -69,3 +69,31 @@ Example:
 CALL AddNewItem('Phone', 'Used', 4500, 23, 5);
 
 
+project/
+│
+├── .vscode/
+│
+├── frontend/ 
+│ ├── index.html
+│ ├── style.css
+│ └── app.js
+│
+├── node_modules/ 
+│
+├── .env 
+│
+├── package.json 
+│
+├── package-lock.json 
+│
+├── server.js 
+│
+├── tempCodeRunnerFile.js 
+│
+└── README.md 
+
+
+
+
+
+
