@@ -62,12 +62,7 @@ Reusable procedures for:
 - Adding new items  
 - Fetching user purchase history  
 - Updating product details  
-- Admin removing unwanted listings  
-
-Example:
-```sql
-CALL AddNewItem('Phone', 'Used', 4500, 23, 5);
-
+- Admin removing unwanted listings
 
 project/
 │
@@ -91,6 +86,7 @@ project/
 ├── tempCodeRunnerFile.js 
 │
 └── README.md 
+
 
 
 
